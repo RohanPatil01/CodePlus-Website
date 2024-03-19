@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colorful Guess the Number</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<div class="body-wrapper">
+  <div class="container">
+    <h1 class="title">Guess the Number</h1>
+    <p class="instruction">Guess a number between 1 and 100:</p>
+    <input type="number" id="guessInput" min="1" max="100" placeholder="Enter your guess...">
+    <div class="button-container">
+      <button id="guessButton">Guess</button>
+      <button id="restartButton" class="restart-btn">Restart</button>
+    </div>
+    <div id="attemptCounter" class="counter">Attempts: <span id="attempts">0</span></div>
+    <p id="message" class="message">Good luck!</p>
+</div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+

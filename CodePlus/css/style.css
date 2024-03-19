@@ -679,3 +679,24 @@ input {
 	}
   }
 /* Projects Section */
+
+
+/* extra project section */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the background color */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px; /* Adjust the width */
+}
+
+.icon-box img {
+  max-width: 100%;
+}
+
+.icon-box h5,
+.icon-box p {
+  margin: 10px 0;
+}

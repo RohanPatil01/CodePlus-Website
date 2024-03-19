@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .body-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 550px;
+            height: 550px;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        #filter-selector {
+            margin-bottom: 20px;
+        }
+
+        #video-feed {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+    <title>Face Detection with Filters</title>
+</head>
+<body>
+    <div class="body-wrapper">
+        <div class="container">
+            <h1>Face Detection with Filters</h1>
+            <label for="filter-selector">Select Face Filter:</label>
+            <select id="filter-selector">
+                <option value="none">None</option>
+                <option value="hat">Hat</option>
+                <option value="glasses">Glasses</option>
+                <option value="mustache">Mustache</option>
+            </select>
+            <br>
+            <img id="video-feed" src="" height="450px" width="550px">
+        </div>
+    </div>
+
+    <script>
+        const filterSelector = document.getElementById('filter-selector');
+        const videoFeed = document.getElementById('video-feed');
+
+        filterSelector.addEventListener('change', function() {
+            const selectedFilter = filterSelector.value;
+            videoFeed.setAttribute('data-filter', selectedFilter);
+        });
+    </script>
+</body>
+</html>
