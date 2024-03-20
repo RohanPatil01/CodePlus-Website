@@ -67,7 +67,7 @@ h1 {
 
 .front {
   padding: -30px; /* Adding padding */
-  background-color: #f8f9fa; /* Setting background color */
+  background: linear-gradient(135deg, #ff6b6b, #ffd166); /* Changing background to linear gradient */
 }
 
 .front, .back {
